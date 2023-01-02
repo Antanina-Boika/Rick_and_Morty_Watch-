@@ -84,4 +84,3 @@ function digitalWatch() {
 }
 digitalWatch();
 setInterval(digitalWatch, 1000);
-

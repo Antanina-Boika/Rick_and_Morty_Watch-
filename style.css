@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
 
 body {
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   background-color: #451a56;
+  padding: 30px;
 }
 
 .clock_container {
@@ -10,47 +11,179 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 20px;
-  gap: 140px;
+  row-gap: 20px;
+  column-gap: 50px;
 }
 
-.clock_background {
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  position: relative;
-  
+.digital_watch_container {
+  width: 150px;
 }
 
 .digital_watch {
   text-align: center;
-  font-size: 8vh;
+  font-size: 20px;
   margin: 0;
   font-weight: 500;
-  width: 400px;
   color: #98d8d8;
 }
 
 .day_of_the_week {
   text-align: center;
-  font-size: 4vh;
+  font-size: 15px;
   margin: 0;
   color: #98d8d8;
 }
 
 .date {
   text-align: center;
-  font-size: 4vh;
+  font-size: 13px;
   margin: 0;
   color: #98d8d8;
 }
 
 .timepiece {
-    background-image: url(./1663277104.png);
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background-size: cover;
-    position: relative;
+  background-image: url(./1663277104.png);
+  width: 220px;
+  height: 220px;
+  background-size: cover;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.hour_hand {
+  position: absolute;
+  width: 60px;
+  border: 2.5px solid #0c0a10;
+  border-radius: 6px;
+  left: 40%;
+  top: 50%;
+  transform-origin: 22px 2px;
+  background-color: #0c0a10;
+}
+
+.minute_hand {
+  position: absolute;
+  width: 80px;
+  border: 1.5px solid #0c0a10;
+  border-radius: 4px;
+  left: 40%;
+  top: 50%;
+  transform-origin: 22px 2px;
+  background-color: #0c0a10;
+}
+
+.second_hand {
+  position: absolute;
+  width: 100px;
+  border: 1px solid #127c2c;
+  border-radius: 2px;
+  left: 40%;
+  top: 50%;
+  transform-origin: 22px 2px;
+  background-color: #127c2c;
+}
+/*
+
+
+
+
+
+
+.minute_hand {
+  position: absolute;
+  width: 80px;
+  border: 2px solid #0c0a10;
+  border-radius: 4px;
+  left: 45%;
+  top: 50%;
+  transform-origin: 22px 2px;
+  background-color: #0c0a10;
+}
+.second_hand {
+  position: absolute;
+  width: 100px;
+  border: 1px solid #127c2c;
+  border-radius: 2px;
+  left: 45%;
+  top: 50%;
+  transform-origin: 22px 2px;
+  background-color: #127c2c;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  .timepiece {
+    width: 450px;
+    height: 450px;
+  }
+  .digital_watch {
+    font-size: 6vh;
+  }
+
+  .day_of_the_week,
+  .date {
+    font-size: 3vh;
+  }
+
+  .clock_container {
+    column-gap: 50px;
+  }
+
+
+}
+
+@media screen and (max-width: 830px) {
+  .timepiece {
+    width: 400px;
+    height: 400px;
+  }
+  .digital_watch {
+    font-size: 5vh;
+  }
+
+  .day_of_the_week,
+  .date {
+    font-size: 2vh;
+  }
+
+
+}
+
+@media screen and (max-width: 650px) {
+  .timepiece {
+    width: 140px;
+    height: 140px;
+  }
+  .digital_watch {
+    font-size: 4vh;
+  }
+
+  .day_of_the_week,
+  .date {
+    font-size: 1vh;
+  }
+
+
+  .clock_container {
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .timepiece {
+    width: 120px;
+    height: 120px;
+  }
+  .digital_watch {
+    font-size: 2vh;
+  }
+} */

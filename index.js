@@ -1,35 +1,9 @@
-const clockContainer = document.querySelector(".timepiece");
+const windowInnerWidth = window.innerWidth;
 
-const hourHand = document.createElement("div");
-clockContainer.appendChild(hourHand);
-hourHand.style.cssText = `position: absolute;
-                              width: 110px;
-                              border: 7px solid #0c0a10;
-                              border-radius: 6px;
-                              left: 45%;
-                              top: 50%;
-                              transform-origin: 22px 2px;
-                              background-color:#0c0a10;`;
-const minuteHand = document.createElement("div");
-clockContainer.appendChild(minuteHand);
-minuteHand.style.cssText = ` position: absolute;
-                                 width: 200px;
-                                 border: 5px solid #0c0a10;
-                                 border-radius: 4px;
-                                 left: 45%;
-                                 top: 50%;
-                                 transform-origin: 22px 2px;;
-                                 background-color:#0c0a10;`;
-const secondHand = document.createElement("div");
-clockContainer.appendChild(secondHand);
-secondHand.style.cssText = `position: absolute;
-                                width: 250px;
-                                background: white;
-                                border: 2px solid #127c2c;
-                                border-radius: 2px;
-                                left: 45%;
-                                top: 50%;
-                                transform-origin: 22px 2px;`;
+const clockContainer = document.querySelector(".timepiece");
+const hourHand = document.querySelector(".hour_hand");
+const minuteHand = document.querySelector(".minute_hand");
+const secondHand = document.querySelector(".second_hand");
 
 const degInOneHour = 6;
 
@@ -110,3 +84,4 @@ function digitalWatch() {
 }
 digitalWatch();
 setInterval(digitalWatch, 1000);
+
